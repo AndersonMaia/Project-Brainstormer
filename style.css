@@ -2,6 +2,11 @@
 
 :root {
   --accent-clr: #fb7600;
+  --dark-clr: #20201e;
+  --darker-clr: #0e0e0e;
+  --gray-clr: #3f3f3d;
+  --light-gray-clr: #545454;
+  --lighter-clr: whitesmoke;
 }
 
 * {
@@ -14,6 +19,7 @@
 body {
   margin: 5rem;
   font-weight: 500;
+  background-color: var(--dark-clr);
 }
 
 header {
@@ -29,6 +35,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--darker-clr);
+  color: var(--lighter-clr);
+  padding: 5rem;
 }
 
 header .logo-section {
@@ -51,6 +60,7 @@ i {
 button {
   padding: 0.5rem;
   cursor: pointer;
+  color: var(--lighter-clr);
 }
 
 .load-save-section button {
@@ -68,8 +78,15 @@ button {
   border-radius: 1rem;
   gap: 1rem;
   background-color: var(--accent-clr);
-  color: whitesmoke;
+  color: var(--lighter-clr);
   font-size: 1.5rem;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rem;
 }
 
 footer {
