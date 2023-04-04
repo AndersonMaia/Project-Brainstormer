@@ -20,40 +20,56 @@ body {
   margin: 5rem;
   font-weight: 500;
   background-color: var(--dark-clr);
+  color: var(--lighter-clr);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  background-color: var(--dark-clr);
+  padding: 4rem;
 }
 
 header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   gap: 5rem;
-  margin-bottom: 2rem;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: var(--darker-clr);
-  color: var(--lighter-clr);
-  padding: 5rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 
-header .logo-section {
+.header-buttons-section {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
 }
 
-.main-section {
+.logo-section {
   display: flex;
-  flex-direction: row;
-  gap: 5rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+  margin-right: 3rem;
+  color: var(--accent-clr);
+}
+
+.load-save-section {
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--gray-clr);
+  padding: 1rem 2rem;
+  gap: 2rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 
 i {
   display: flex;
-  font-size: 2.5rem;
+  font-size: 2rem;
   align-self: center;
 }
 
@@ -74,33 +90,37 @@ button {
   align-items: center;
   appearance: none;
   border: none;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
   gap: 1rem;
   background-color: var(--accent-clr);
   color: var(--lighter-clr);
-  font-size: 1.5rem;
-}
-
-.logo-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10rem;
+  font-size: 2rem;
+  margin: 1rem 0.5rem;
 }
 
 footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   gap: 5rem;
-  max-width: 100%;
   font-size: 1rem;
   font-weight: 500;
+  background-color: var(--gray-clr);
+  padding: 1rem 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 footer .generating {
   display: flex;
+  align-items: center;
   flex-direction: row;
   gap: 1rem;
+}
+
+footer .sites {
+  display: flex;
+  gap: 3rem;
+  margin-right: 1rem;
 }

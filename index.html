@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Brainstormer</title>
   </head>
   <body>
-    <main>
-      <header>
+    <header>
+      <div class="header-buttons-section">
         <div class="load-save-section">
           <button class="load">
             <i class="fi fi-rr-folder"></i>
@@ -31,101 +40,102 @@
           <i class="fi fi-sr-play"></i>
           Randomize
         </button>
-        <div class="logo-section">
-          <img src="" alt="Brainstormer logo." />
+      </div>
+      <div class="logo-section">
+        <img src="" alt="Brainstormer logo." />
         <p>Brainstormer by Anderson Maia</p>
+      </div>
+    </header>
+    <main>
+      <div class="categories-section">
+        <h3>Categories</h3>
+        <div class="categories">
+          <button class="characters">Characters</button>
+          <button class="creatures">Creatures</button>
+          <button class="environments">Environments</button>
+          <button class="random-category">Random</button>
         </div>
-      </header>
-      <div class="main-section">
-        <div class="categories-section">
-          <h3>Categories</h3>
-          <div class="categories">
-            <button class="characters">Characters</button>
-            <button class="creatures">Creatures</button>
-            <button class="environments">Environments</button>
-            <button class="random-category">Random</button>
-          </div>
+      </div>
+      <div class="descriptions-section">
+        <div class="theme">
+          <h3>Theme</h3>
+          <button class="fantasy">Fantasy</button>
+          <button class="scifi">Sci-Fi</button>
+          <button class="horror">Horror</button>
+          <button class="random-theme">Random</button>
         </div>
-        <div class="descriptions-section">
-          <div class="theme">
-            <h3>Theme</h3>
-            <button class="fantasy">Fantasy</button>
-            <button class="scifi">Sci-Fi</button>
-            <button class="horror">Horror</button>
-            <button class="random-theme">Random</button>
-          </div>
-          <div class="descriptions">
-            <p class="description">BlaBlaBla</p>
-            <p class="description">BlaBlaBla</p>
-            <p class="description">BlaBlaBla</p>
-          </div>
+        <div class="descriptions">
+          <p class="description">BlaBlaBla</p>
+          <p class="description">BlaBlaBla</p>
+          <p class="description">BlaBlaBla</p>
         </div>
-        <div class="character-options-section">
-          <h3 class="character-details">Character Details</h3>
-          <div class="details">
+      </div>
+      <div class="character-options-section">
+        <h3 class="character-details">Character Details</h3>
+        <div class="details">
+          <div>
+            <label>Character Class</label>
+            <select name="Option" id="">
+              <option value="random-class">Random</option>
+              <option value="warrior">Warrior</option>
+              <option value="ranged">Ranged</option>
+              <option value="mage">Mage / Tech</option>
+            </select>
             <div>
-              <label>Character Class</label>
-              <select name="Option" id="">
-                <option value="random-class">Random</option>
-                <option value="warrior">Warrior</option>
-                <option value="ranged">Ranged</option>
-                <option value="mage">Mage / Tech</option>
-              </select>
-              <div>
-                <label for="">Include uncommon Races?</label>
-                <input type="checkbox" name="" id="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="creature-options-section">
-          <h3 class="character-details">Creature Details</h3>
-          <div class="details">
-            <div>
-              <label>Creature Class</label>
-              <select name="Option" id="">
-                <option value="random-class">Random</option>
-                <option value="warrior">Warrior</option>
-                <option value="ranged">Ranged</option>
-                <option value="mage">Mage / Tech</option>
-              </select>
-              <div>
-                <label for="">Include uncommon Races?</label>
-                <input type="checkbox" name="" id="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="environment-options-section">
-          <h3 class="environment-details">Environment Details</h3>
-          <div class="details">
-            <div>
-              <label>Enviroment Type</label>
-              <select name="Option" id="">
-                <option value="random-class">Random</option>
-                <option value="warrior">Warrior</option>
-                <option value="ranged">Ranged</option>
-                <option value="mage">Mage / Tech</option>
-              </select>
-              <div>
-                <label for="">Include uncommon Races?</label>
-                <input type="checkbox" name="" id="" />
-              </div>
+              <label for="">Include uncommon Races?</label>
+              <input type="checkbox" name="" id="" />
             </div>
           </div>
         </div>
       </div>
-      <script src="script.js"></script>
-    </body>
-    <footer>
-      <div class="generating">
-        <p>Generating...</p>
-        <i class="fi fi-rr-loading"></i>
+      <div class="creature-options-section">
+        <h3 class="character-details">Creature Details</h3>
+        <div class="details">
+          <div>
+            <label>Creature Class</label>
+            <select name="Option" id="">
+              <option value="random-class">Random</option>
+              <option value="warrior">Warrior</option>
+              <option value="ranged">Ranged</option>
+              <option value="mage">Mage / Tech</option>
+            </select>
+            <div>
+              <label for="">Include uncommon Races?</label>
+              <input type="checkbox" name="" id="" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="sites">
-        <p>www.andersonmaiaart.com</p>
-        <p>www.andersonmaiacode.com</p>
+      <div class="environment-options-section">
+        <h3 class="environment-details">Environment Details</h3>
+        <div class="details">
+          <div>
+            <label>Enviroment Type</label>
+            <select name="Option" id="">
+              <option value="random-class">Random</option>
+              <option value="warrior">Warrior</option>
+              <option value="ranged">Ranged</option>
+              <option value="mage">Mage / Tech</option>
+            </select>
+            <div>
+              <label for="">Include uncommon Races?</label>
+              <input type="checkbox" name="" id="" />
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
     </main>
+    <script src="script.js"></script>
+  </body>
+
+  <footer>
+    <div class="generating">
+      <p>Generating...</p>
+      <i class="fi fi-rr-loading"></i>
+    </div>
+    <div class="sites">
+      <p>www.andersonmaiaart.com</p>
+      <p>www.andersonmaiacode.com</p>
+    </div>
+  </footer>
 </html>
