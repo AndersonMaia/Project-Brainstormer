@@ -21,21 +21,7 @@
   </head>
   <body>
     <header>
-      <div class="header-buttons-section">
-        <div class="load-save-section">
-          <button class="load">
-            <i class="fi fi-rr-folder"></i>
-          </button>
-          <button class="save">
-            <i class="fi fi-rr-disk"></i>
-          </button>
-          <button class="settings">
-            <i class="fi fi-rr-settings"></i>
-          </button>
-          <button class="info">
-            <i class="fi fi-rs-interrogation"></i>
-          </button>
-        </div>
+      <div class="randomize-section">
         <button class="randomize-btn">
           <i class="fi fi-sr-play"></i>
           Randomize
@@ -48,8 +34,16 @@
     </header>
     <main>
       <div class="categories-section">
-        <h3>Categories</h3>
+        <div class="theme">
+          <h3>Theme</h3>
+          <button class="fantasy light">Fantasy</button>
+          <button class="scifi dark">Sci-Fi</button>
+          <button class="horror light">Horror</button>
+          <button class="random-theme dark">Random</button>
+        </div>
+
         <div class="categories">
+          <h3>Categories</h3>
           <button class="characters light">Characters</button>
           <button class="creatures dark">Creatures</button>
           <button class="environments light">Environments</button>
@@ -57,18 +51,9 @@
         </div>
       </div>
       <div class="descriptions-section">
-        <div class="theme">
-          <h3>Theme</h3>
-          <button class="fantasy">Fantasy</button>
-          <button class="scifi">Sci-Fi</button>
-          <button class="horror">Horror</button>
-          <button class="random-theme">Random</button>
-        </div>
-        <div class="descriptions">
-          <p class="description light">BlaBlaBla</p>
-          <p class="description dark">BlaBlaBla</p>
-          <p class="description light">BlaBlaBla</p>
-        </div>
+        <p class="description light">BlaBlaBla</p>
+        <p class="description dark">BlaBlaBla</p>
+        <p class="description light">BlaBlaBla</p>
       </div>
       <div class="character-options-section">
         <h3 class="character-details">Character Details</h3>
@@ -125,13 +110,14 @@
         </div>
       </div>
     </main>
+
     <script src="script.js"></script>
   </body>
 
   <footer>
-    <div class="generating">
+    <div class="generating bounce">
       <p>Generating...</p>
-      <i class="fi fi-rr-loading"></i>
+      <i class="fi fi-rr-loading rotate"></i>
     </div>
     <div class="sites">
       <p>www.andersonmaiaart.com</p>
