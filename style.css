@@ -171,7 +171,7 @@ main {
 }
 
 /************************************ CHARACTER OPTIONS ********************************/
-.character-options-section {
+.details-section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -179,6 +179,19 @@ main {
   background-color: var(--gray-clr);
   padding: 0.5rem 0.5rem;
   margin: 0.3rem 0;
+  gap: 1rem;
+  line-height: 3rem;
+}
+
+.details-section select,
+.details-section input {
+  margin-left: 1rem;
+  border-radius: 0.3rem;
+}
+
+.details-section input:checked,
+.details-section input:active {
+  accent-color: var(--accent-clr);
 }
 
 /*********************************** FOOTER ********************************************/
@@ -205,6 +218,7 @@ footer .generating {
 
 footer .sites {
   display: flex;
+  flex-direction: row;
   gap: 3rem;
   margin-right: 1rem;
 }
@@ -260,4 +274,52 @@ footer .sites {
 
 .bounce {
   animation: bounce 3s ease-in infinite;
+}
+
+/******************************************MEDIA QUERIES******************************************/
+@media (max-width: 768px) {
+  body {
+    margin: 1rem;
+  }
+
+  header {
+    gap: 3rem;
+  }
+
+  .logo-section {
+    gap: 0.3rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .randomize-section button {
+    font-size: 1rem;
+    margin: 1rem 0.5rem;
+  }
+
+  .categories-section {
+    padding: 0.1rem 0.1rem;
+    margin: 0.3rem 0;
+    gap: 0.5rem;
+  }
+  .categories,
+  .theme {
+    margin: 0.5rem;
+  }
+  .categories button,
+  .theme button {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 0.3rem;
+  }
+
+  .descriptions-section {
+    font-size: 1rem;
+  }
+
+  footer .sites {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
 }
